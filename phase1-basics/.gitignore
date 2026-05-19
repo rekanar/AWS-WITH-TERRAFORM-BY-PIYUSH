@@ -1,0 +1,32 @@
+# Terraform state files — NEVER commit these (may contain secrets/passwords)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory — auto-generated, not needed in Git
+.terraform/
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Sensitive variable files — exclude all, but allow example files
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Generated plan files
+*.tfplan
+tfplan
+
+# Override files (local developer overrides — should not be shared)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
